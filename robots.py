@@ -40,5 +40,3 @@ class Robot:
             self.f = 'WEST'
         elif self.f == 'WEST':
             self.f = 'NORTH'
-
-    
