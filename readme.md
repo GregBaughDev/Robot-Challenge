@@ -40,7 +40,7 @@ Test 2.
 `Active robot: Robot 1`  
 `Number of robots: 1`  
 
-Test 3.
+Test 3.  
 `PLACE 0,0,SOUTH`  
 `MOVE`  
 `RIGHT`  
