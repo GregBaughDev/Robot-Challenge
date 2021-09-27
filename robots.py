@@ -11,12 +11,12 @@ class Robot:
 
     def move(self):
         # North & South - y axis
-        if self.f == 'NORTH' and self.y != 5:
+        if self.f == 'NORTH' and self.y != 4:
             self.y += 1
         elif self.f == 'SOUTH' and self.y != 0:
             self.y -= 1
         # East & West - x axis
-        elif self.f == 'EAST' and self.x != 5:
+        elif self.f == 'EAST' and self.x != 4:
             self.x += 1
         elif self.f == 'WEST' and self.x != 0:
             self.x -= 1
@@ -40,5 +40,3 @@ class Robot:
             self.f = 'WEST'
         elif self.f == 'WEST':
             self.f = 'NORTH'
-
-    
