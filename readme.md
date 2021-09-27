@@ -58,6 +58,6 @@ Test 3.
 
 * OUTPUT  
 `0,2,NORTH`  
-`Activev robot: Robot 1`  
+`Active robot: Robot 1`  
 `Number of robots: 2`  
 
