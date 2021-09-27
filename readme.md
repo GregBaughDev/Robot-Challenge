@@ -35,7 +35,7 @@ Test 2.
 `MOVE`  
 `REPORT`  
 
-* OUTPUT
+* OUTPUT  
 `4,4,EAST`  
 `Active robot: Robot 1`  
 `Number of robots: 1`  
