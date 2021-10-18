@@ -1,8 +1,10 @@
 import sys
-from robots import Robot
+from enum import Enum
+from robots import Movement, Robot
 
 # Directions and robots dictionaries
-directions = ['NORTH', 'EAST', 'SOUTH', 'WEST']
+
+DIRECTIONS = ('NORTH', 'EAST', 'SOUTH', 'WEST')
 robots = []
 
 # Intro text
@@ -22,7 +24,7 @@ def create_robot(user_input):
             print("Coordinates must be between 0 and 4")
             sys.exit()
 
-        if userCoordinates[2].upper() in directions:
+        if userCoordinates[2].upper() in DIRECTIONS:
             robots.append(Robot(userCoordinates[0], userCoordinates[1], userCoordinates[2].upper()))
 
         else: 
@@ -67,6 +69,15 @@ while active:
 
     elif action.upper().strip() == "QUIT":
         active = False
+
+    elif action.upper().strip() == "CHARGE":
+        activeRobot.charge()
+
+    elif action.upper().strip() == "WALK":
+        activeRobot.move_speed = Movement.WALK
+
+    elif action.upper().strip() == "RUN":
+        activeRobot.move_speed = Movement.RUN
 
     else:
         print("Please enter a valid command")  
